@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from config.db import collection2, templates, SECRET_KEY, ALGORITHM
 from modals.auth import User
 from pwdlib import PasswordHash
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer
 from typing import Annotated
 import jwt
 from jwt.exceptions import InvalidTokenError
